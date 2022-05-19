@@ -12,5 +12,25 @@ function colorgen() {
     document.body.style.backgroundColor="rgb("+r+", "+g+", "+b+")";
     document.getElementById("colour").innerHTML = "This colour is: rgb("+r+", "+g+", "+b+")";
     // console.log("rgb("+r+", "+g+", "+b+")");
+
+    checkContrast(r, g, b);
+}
+
+function checkContrast(r, g, b) {
+    if (( (r*0.299) + (g*0.587) + (b*0.114) ) > 150) {
+        document.body.style.color="black";
+        Array.prototype.forEach.call(document.getElementsByTagName("a"), function(e) {
+            e.style.color="black";
+            e.style.borderColor="black";
+        });
+
+    }
+    else {
+        document.body.style.color="white";
+        Array.prototype.forEach.call(document.getElementsByTagName("a"), function(e) {
+            e.style.color="white";
+            e.style.borderColor="white";
+        });
+    }
 }
 

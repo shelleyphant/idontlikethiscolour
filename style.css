@@ -6,6 +6,8 @@ html, body, div, h1 {
 
 body {
 	background-color: rgb(88, 88, 88);
+	color: white;
+	font-family: sans-serif;
 }
 
 
@@ -29,9 +31,5 @@ body {
 a {
 	text-decoration: none;
 	color: white;
-	font-family: sans-serif;
-}
-#colour {
-    color: white;
 	font-family: sans-serif;
 }
