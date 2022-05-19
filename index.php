@@ -13,6 +13,7 @@
         <a href="#" class="button" onclick="colorgen()">
             <h1>I Don't Like This Colour</h1>
         </a>
+        <p id="colour"></p>
     </div>
 </body>
 
@@ -27,10 +28,6 @@ fclose($fp);
 
 // Add 1 to the existing count 
 $count = $count + 1;
-
-// Display the number of hits 
-// If you don't want to display it, comment out this line 
-//echo "<p>Page views:" . $count . "</p>"; 
 
 // Reopen the file and erase the contents 
 $fp = fopen("counter.txt", "w");

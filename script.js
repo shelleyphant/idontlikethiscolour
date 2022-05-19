@@ -10,6 +10,7 @@ function colorgen() {
 	});
     
     document.body.style.backgroundColor="rgb("+r+", "+g+", "+b+")";
-    console.log("rgb("+r+", "+g+", "+b+")");
+    document.getElementById("colour").innerHTML = "This colour is: rgb("+r+", "+g+", "+b+")";
+    // console.log("rgb("+r+", "+g+", "+b+")");
 }
 
